@@ -1,0 +1,7 @@
+{
+  "name": "liberty_ui",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
