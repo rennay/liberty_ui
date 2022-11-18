@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Liberty Lead Generator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-list>  
+    <ion-item>
+      <ion-label>ID Number</ion-label>
+      <ion-input placeholder="Enter ID number" [(ngModel)]="idNumber"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input placeholder="Enter first name" [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Last Name</ion-label>
+      <ion-input placeholder="Enter last name" [(ngModel)]="lastName"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="addLead()">Add Lead</ion-button>
+
+  <ion-input [(ngModel)]="status"></ion-input>
+</ion-content>

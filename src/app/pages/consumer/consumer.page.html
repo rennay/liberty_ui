@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Consumer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-row>
+    <ion-col class="grid-heading">ID number</ion-col>
+    <ion-col class="grid-heading">First name</ion-col>
+    <ion-col class="grid-heading">Last name</ion-col>
+    <ion-col class="grid-heading">Covid 19</ion-col>
+  </ion-row>
+  <ion-row *ngFor="let record of records; let i=index">
+    <!-- <ion-col>
+      {{ i }}
+    </ion-col> -->
+    <ion-col>
+      {{ record.IDNumber }}
+    </ion-col>
+    <ion-col>
+      {{ record.Name }}
+    </ion-col>
+    <ion-col>
+      {{ record.Surname }}
+    </ion-col>
+    <ion-col>
+      {{ record.COVID19 }}
+    </ion-col>
+  </ion-row>
+</ion-content>
